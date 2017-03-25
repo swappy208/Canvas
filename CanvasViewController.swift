@@ -19,7 +19,6 @@ class CanvasViewController: UIViewController {
     var trayDown: CGPoint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        newlyCreatedFace.isUserInteractionEnabled = true
         trayDownOffset = 160
         trayUp = trayView.center
         trayDown = CGPoint(x: trayView.center.x ,y: trayView.center.y + trayDownOffset)
@@ -71,8 +70,8 @@ class CanvasViewController: UIViewController {
             newlyCreatedFaceOriginalCenter = newlyCreatedFace.center
             let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(didPanFace))
             // Attach it to a view of your choice. If it's a UIImageView, remember to enable user interaction
-            imageView.isUserInteractionEnabled = true
-            imageView.addGestureRecognizer(panGestureRecognizer)
+            newlyCreatedFace.isUserInteractionEnabled = true
+            newlyCreatedFace.addGestureRecognizer(panGestureRecognizer)
         } else if sender.state == .changed {
             print("Gesture is changing")
             newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalCenter.x + translation.x, y: newlyCreatedFaceOriginalCenter.y + translation.y)
