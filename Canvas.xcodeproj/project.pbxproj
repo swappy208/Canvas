@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDF0784DA720E381BC520646 /* Pods_Canvas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D515C3D17BC9F6D16C5460 /* Pods_Canvas.framework */; };
 		EC251E741E8613EC00B2026B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC251E731E8613EC00B2026B /* AppDelegate.swift */; };
 		EC251E761E8613EC00B2026B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC251E751E8613EC00B2026B /* ViewController.swift */; };
 		EC251E791E8613EC00B2026B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC251E771E8613EC00B2026B /* Main.storyboard */; };
 		EC251E7B1E8613EC00B2026B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC251E7A1E8613EC00B2026B /* Assets.xcassets */; };
 		EC251E7E1E8613EC00B2026B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC251E7C1E8613EC00B2026B /* LaunchScreen.storyboard */; };
+		ECBF0B111E8621D0003A3937 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF0B101E8621D0003A3937 /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07CB337658E409348E0F7F1A /* Pods-Canvas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Canvas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Canvas/Pods-Canvas.release.xcconfig"; sourceTree = "<group>"; };
 		EC251E701E8613EC00B2026B /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC251E731E8613EC00B2026B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC251E751E8613EC00B2026B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		EC251E7A1E8613EC00B2026B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC251E7D1E8613EC00B2026B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC251E7F1E8613EC00B2026B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAB3DD43BBE4E152C5A3254 /* Pods-Canvas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Canvas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Canvas/Pods-Canvas.debug.xcconfig"; sourceTree = "<group>"; };
+		ECBF0B101E8621D0003A3937 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = SOURCE_ROOT; };
+		F9D515C3D17BC9F6D16C5460 /* Pods_Canvas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Canvas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF0784DA720E381BC520646 /* Pods_Canvas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C31E48A1BCE72007605EF51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECAB3DD43BBE4E152C5A3254 /* Pods-Canvas.debug.xcconfig */,
+				07CB337658E409348E0F7F1A /* Pods-Canvas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A10F2B694CDEB774101D7EE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D515C3D17BC9F6D16C5460 /* Pods_Canvas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC251E671E8613EA00B2026B = {
 			isa = PBXGroup;
 			children = (
 				EC251E721E8613EC00B2026B /* Canvas */,
 				EC251E711E8613EC00B2026B /* Products */,
+				2C31E48A1BCE72007605EF51 /* Pods */,
+				A10F2B694CDEB774101D7EE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		EC251E721E8613EC00B2026B /* Canvas */ = {
 			isa = PBXGroup;
 			children = (
+				ECBF0B101E8621D0003A3937 /* CanvasViewController.swift */,
 				EC251E731E8613EC00B2026B /* AppDelegate.swift */,
 				EC251E751E8613EC00B2026B /* ViewController.swift */,
 				EC251E771E8613EC00B2026B /* Main.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC251E821E8613EC00B2026B /* Build configuration list for PBXNativeTarget "Canvas" */;
 			buildPhases = (
+				0DB6D5A24B0C18654045E299 /* [CP] Check Pods Manifest.lock */,
 				EC251E6C1E8613EA00B2026B /* Sources */,
 				EC251E6D1E8613EA00B2026B /* Frameworks */,
 				EC251E6E1E8613EA00B2026B /* Resources */,
+				06FC0F0659AC79ACB1CB1FBF /* [CP] Embed Pods Frameworks */,
+				DBBCD29C49887D9D42311885 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +160,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06FC0F0659AC79ACB1CB1FBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Canvas/Pods-Canvas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DB6D5A24B0C18654045E299 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBBCD29C49887D9D42311885 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Canvas/Pods-Canvas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC251E6C1E8613EA00B2026B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EC251E761E8613EC00B2026B /* ViewController.swift in Sources */,
+				ECBF0B111E8621D0003A3937 /* CanvasViewController.swift in Sources */,
 				EC251E741E8613EC00B2026B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +336,7 @@
 		};
 		EC251E831E8613EC00B2026B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECAB3DD43BBE4E152C5A3254 /* Pods-Canvas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Canvas/Info.plist;
@@ -269,6 +349,7 @@
 		};
 		EC251E841E8613EC00B2026B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07CB337658E409348E0F7F1A /* Pods-Canvas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Canvas/Info.plist;
@@ -298,6 +379,7 @@
 				EC251E841E8613EC00B2026B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
